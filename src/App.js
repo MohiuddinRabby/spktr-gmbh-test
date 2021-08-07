@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 import PostCreate from "./components/PostCreate";
 import PostSingle from "./components/PostSingle";
 import { AllPostContextPorvider } from "./global/contexts/AllPostContext";
@@ -14,6 +15,7 @@ const App = () => {
             <Route exact path="/" component={Home} />
             <Route path="/posts/:id" component={PostSingle} />
             <Route path="/create-post" component={PostCreate} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </AllPostContextPorvider>
       </Router>

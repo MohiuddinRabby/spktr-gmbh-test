@@ -9,7 +9,7 @@ const Posts = (props) => {
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{body}</p>
         <Link to={"/posts/" + id}
-          className="btn btn-primary btn-sm"
+          className="btn btn-outline-primary btn-sm"
         >
           Read More
         </Link>

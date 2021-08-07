@@ -16,7 +16,7 @@ const Home = () => {
       </div>
       <div className="row mt-3">
         {allPost?.map((posts) => (
-          <div className="col-md-3 py-3" key={posts?.id}>
+          <div className="col-md-4 py-3" key={posts?.id}>
             <Posts posts={posts}></Posts>
           </div>
         ))}
